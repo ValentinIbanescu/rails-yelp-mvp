@@ -2,5 +2,5 @@
 <h5><%= @restaurant.category %></h5>
 <h5><%= @restaurant.address %></h5>
 <h5><%= @restaurant.phone_number %></h5>
-<h5><%= link_to "Leave a review", new_restaurant_review_path %></h5>
+<h5><%= link_to "Leave a review", new_restaurant_review_path(@restaurant) %></h5>
 <h5><%= link_to "View all restaurants", restaurants_path, class: "btn btn-primary" %></h5>
